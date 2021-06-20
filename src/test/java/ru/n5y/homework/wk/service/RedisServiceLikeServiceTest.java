@@ -25,14 +25,6 @@ class RedisServiceLikeServiceTest extends EmbeddedRedisTest {
     players.put("kolyan", 0L);
   }
 
-  @Test
-  void testLikesAndGetLikes() {
-    Assertions.assertThat(likeService.getLikes("kolyan")).isZero();
-    likeService.like("kolyan");
-    Assertions.assertThat(likeService.getLikes("kolyan")).isOne();
-
-  }
-
   @Nested
   @DisplayName("'like' method tests")
   class LikeTest {
@@ -77,9 +69,9 @@ class RedisServiceLikeServiceTest extends EmbeddedRedisTest {
     }
 
     @Test
+    @DisplayName("Successful get count of player likes.")
     void successful() {
       Assertions.assertThat(likeService.getLikes("kolyan")).isZero();
-
     }
   }
 
