@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: wk-homework
+  redis:
+    client-name: ${spring.application.name}
+    client-type: lettuce
+    host: 178.20.41.223
+    port: 6379
+logging:
+  level:
+    ru.n5y.homework.wk: debug
