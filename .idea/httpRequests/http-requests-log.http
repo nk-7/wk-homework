@@ -1,6 +1,95 @@
 GET http://127.0.0.1:8080/likes/1
 Accept: application/json
 
+<> 2021-06-22T121041.200.json
+
+###
+
+GET http://127.0.0.1:8080/likes/1
+Accept: application/json
+
+<> 2021-06-22T121038.200.json
+
+###
+
+POST http://127.0.0.1:8080/likes/1
+Accept: application/json
+
+###
+
+GET http://127.0.0.1:8080/players
+Accept: application/json
+
+<> 2021-06-22T120939.200.json
+
+###
+
+POST http://127.0.0.1:8080/players
+Content-Type: application/json
+
+<> 2021-06-22T120936.200.txt
+
+###
+
+POST http://127.0.0.1:8080/players
+Content-Type: application/json
+
+<> 2021-06-22T120933.200.txt
+
+###
+
+GET http://127.0.0.1:8080/players
+Accept: application/json
+
+<> 2021-06-22T120931.200.json
+
+###
+
+GET http://127.0.0.1:8080/players
+Accept: application/json
+
+<> 2021-06-22T120926.200.json
+
+###
+
+POST http://127.0.0.1:8080/likes/1
+Accept: application/json
+
+<> 2021-06-22T095513.500.json
+
+###
+
+GET http://127.0.0.1:8080/players
+Accept: application/json
+
+<> 2021-06-22T095511.200.json
+
+###
+
+POST http://127.0.0.1:8080/players
+Content-Type: application/json
+
+<> 2021-06-22T095508.200.txt
+
+###
+
+POST http://127.0.0.1:8080/players
+Content-Type: application/json
+
+<> 2021-06-22T095503.200.txt
+
+###
+
+POST http://127.0.0.1:8080/likes/1
+Accept: application/json
+
+<> 2021-06-22T095019.500.json
+
+###
+
+GET http://127.0.0.1:8080/likes/1
+Accept: application/json
+
 <> 2021-06-22T094448.200.json
 
 ###
@@ -254,97 +343,6 @@ POST http://127.0.0.1:8080/players
 Content-Type: application/json
 
 <> 2021-06-22T085401-1.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T085401.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T085400.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T085359.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T085258.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T085249.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T084013.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T084011.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T084004.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T082445.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T082443.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T082442.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T081924.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T081923.200.txt
 
 ###
 

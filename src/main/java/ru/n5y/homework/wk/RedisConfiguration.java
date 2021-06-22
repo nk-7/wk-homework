@@ -1,16 +1,17 @@
+
 package ru.n5y.homework.wk;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
-import org.springframework.data.redis.serializer.StringRedisSerializer;
+import org.springframework.data.redis.serializer.GenericToStringSerializer;
+import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.support.atomic.RedisAtomicLong;
 import org.springframework.data.redis.support.collections.DefaultRedisMap;
 import org.springframework.data.redis.support.collections.RedisMap;
 import ru.n5y.homework.wk.service.LikeService;
 import ru.n5y.homework.wk.service.PlayerService;
-import ru.n5y.homework.wk.service.redis.LongSerializer;
 import ru.n5y.homework.wk.service.redis.RedisConstants;
 import ru.n5y.homework.wk.service.redis.RedisLikesService;
 import ru.n5y.homework.wk.service.redis.RedisPlayerService;
@@ -28,9 +29,9 @@ public class RedisConfiguration {
   RedisTemplate<String, Long> likesTemplate() {
     final RedisTemplate<String, Long> redisTemplate = new RedisTemplate<>();
     redisTemplate.setConnectionFactory(redisConnectionFactory);
-    redisTemplate.setKeySerializer(new StringRedisSerializer());
-    redisTemplate.setHashKeySerializer(new StringRedisSerializer());
-    redisTemplate.setHashValueSerializer(new LongSerializer());
+    redisTemplate.setKeySerializer(RedisSerializer.string());
+    redisTemplate.setHashKeySerializer(RedisSerializer.string());
+    redisTemplate.setHashValueSerializer(new GenericToStringSerializer<>(Long.class));
     return redisTemplate;
   }
 
