@@ -19,6 +19,8 @@
     <version.logback>1.2.3</version.logback>
     <version.redisson>3.15.6</version.redisson>
     <version.embedded-redis>0.7.3</version.embedded-redis>
+    <version.springfox-boot-starter>3.0.0</version.springfox-boot-starter>
+    <version.springdoc-openapi-ui>1.5.2</version.springdoc-openapi-ui>
   </properties>
 
   <dependencyManagement>
@@ -72,7 +74,13 @@
       <groupId>io.lettuce</groupId>
       <artifactId>lettuce-core</artifactId>
     </dependency>
-
+    
+    <!-- Springdoc OpenAPI UI -->
+    <dependency>
+      <groupId>org.springdoc</groupId>
+      <artifactId>springdoc-openapi-ui</artifactId>
+      <version>${version.springdoc-openapi-ui}</version>
+    </dependency>
     <!-- Testing-->
     <dependency>
       <groupId>org.junit.jupiter</groupId>

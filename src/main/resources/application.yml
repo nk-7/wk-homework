@@ -9,3 +9,8 @@ spring:
 logging:
   level:
     ru.n5y.homework.wk: debug
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger.html
