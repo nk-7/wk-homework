@@ -1,6 +1,41 @@
 GET http://127.0.0.1:8080/likes/1
 Accept: application/json
 
+<> 2021-06-22T094448.200.json
+
+###
+
+POST http://127.0.0.1:8080/likes/1
+Accept: application/json
+
+<> 2021-06-22T094434.500.json
+
+###
+
+GET http://127.0.0.1:8080/players
+Accept: application/json
+
+<> 2021-06-22T094429.200.json
+
+###
+
+POST http://127.0.0.1:8080/players
+Content-Type: application/json
+
+<> 2021-06-22T094427.200.txt
+
+###
+
+POST http://127.0.0.1:8080/players
+Content-Type: application/json
+
+<> 2021-06-22T094424.200.txt
+
+###
+
+GET http://127.0.0.1:8080/likes/1
+Accept: application/json
+
 <> 2021-06-22T091603.200.json
 
 ###
@@ -310,41 +345,6 @@ POST http://127.0.0.1:8080/players
 Content-Type: application/json
 
 <> 2021-06-22T081923.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T081921.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T081710.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T081709.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T081706.200.txt
-
-###
-
-POST http://127.0.0.1:8080/players
-Content-Type: application/json
-
-<> 2021-06-22T081317.200.txt
 
 ###
 
