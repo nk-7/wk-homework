@@ -1,18 +1,19 @@
+### Зарегистрировать игрока
 POST http://127.0.0.1:8080/players
 Content-Type: application/json
 
-###
+### Получить список игроков
 GET http://127.0.0.1:8080/players
 Accept: application/json
 
 ###
 
-POST http://127.0.0.1:8080/likes/660e7b8c-51b9-4a6e-82db-353a68e9e0c4
+POST http://127.0.0.1:8080/likes/1
 Accept: application/json
 
 ###
 
-GET http://127.0.0.1:8080/likes/660e7b8c-51b9-4a6e-82db-353a68e9e0c4
+GET http://127.0.0.1:8080/likes/1
 Accept: application/json
 
 ###

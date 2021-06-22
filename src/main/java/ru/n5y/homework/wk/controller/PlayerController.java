@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import ru.n5y.homework.wk.model.Player;
 import ru.n5y.homework.wk.service.PlayerService;
 
 /**
@@ -30,7 +29,7 @@ public class PlayerController {
    * @return Список пользователей.
    */
   @GetMapping
-  public ResponseEntity<Iterable<Player>> get() {
+  public ResponseEntity<Iterable<String>> get() {
     log.debug("GET request for players list.");
     return ResponseEntity.ok(playerService.players());
   }
@@ -41,10 +40,10 @@ public class PlayerController {
    * @return Вновь зарегистрированный пользователь.
    */
   @PostMapping
-  public ResponseEntity<Player> register() {
+  public ResponseEntity<String> register() {
     log.debug("POST request for registration.");
-    final Player player = playerService.register();
-    log.info("New player has been registered with id '{}'.", player.getPlayerId());
-    return ResponseEntity.ok(player);
+    final String playerId = playerService.register();
+    log.info("New player has been registered with id '{}'.", playerId);
+    return ResponseEntity.ok(playerId);
   }
 }
